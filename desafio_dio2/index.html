@@ -1,0 +1,112 @@
+<!--
+This single document contains the HTML source for a small multi-page website for a medical clinic.
+Files included below (copy each into its own .html file and an 'images/' folder for the placeholders):
+- template.html        (base structure you can reuse)
+- index.html           (Página Principal)
+- sobre.html           (Sobre a clínica)
+- horario.html         (Horário de Atendimento)
+- contato.html         (Contato)
+
+Instructions: create a folder, place the images referenced in images/ (or change paths), then open each .html in a browser.
+-->
+
+<!-- FILE: template.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Template - Clínica</title>
+  <style>
+    /* Small inline styles just to arrange the template (allowed since CSS was not the focus) */
+    body{font-family: Arial,Helvetica,sans-serif;margin:0;line-height:1.4;color:#222}
+    header{background:#0b7285;color:#fff;padding:20px;text-align:center}
+    nav{background:#095b62;padding:10px}
+    nav a{color:#fff;text-decoration:none;margin-right:15px;font-weight:bold}
+    .container{padding:20px}
+    .hero-img{width:100%;max-height:260px;object-fit:cover;display:block;margin:0 auto;}
+    footer{background:#e9ecef;padding:15px;text-align:center;font-size:0.9rem}
+    .card{background:#f8f9fa;padding:15px;border-radius:6px}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border:1px solid #ccc;padding:8px;text-align:left}
+    th{background:#dee2e6}
+    form input, form textarea, form button, form select{display:block;width:100%;padding:8px;margin-top:8px}
+    .form-row{max-width:600px}
+    .actions{display:flex;gap:10px}
+    .actions button{width:auto;padding:10px 16px}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Página Principal</a>
+    <a href="sobre.html">Sobre a clínica</a>
+    <a href="horario.html">Horário de Atendimento</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Header image for each page will be included inside each page's header section -->
+
+  <main class="container" id="content">
+    <!-- CONTENT: each page supplies its own header + content area -->
+  </main>
+
+  <footer>
+    <div>Clínica Saúde & Bem estar— Rua Gabriel pereira de souza, 123, Bairro Iratama, Cidade Garanhuns - CEP 55304-000</div>
+    <div>Telefone: (87) 9 9320-0000 • WhatsApp: (87) 9 9987-9999 • E-mail: contato@clinicasaudebemstar.com</div>
+  </footer>
+</body>
+</html>
+
+
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Página Principal — Clínica Saúde & Bem</title>
+  <style>
+    /* include same styles as template for standalone pages */
+    body{font-family: Arial,Helvetica,sans-serif;margin:0;line-height:1.4;color:#222}
+    header{background:#0b7285;color:#fff;padding:0;text-align:center}
+    nav{background:#095b62;padding:10px}
+    nav a{color:#fff;text-decoration:none;margin-right:15px;font-weight:bold}
+    .container{padding:20px}
+    .hero-img{width:100%;max-height:260px;object-fit:cover;display:block;margin:0 auto;}
+    footer{background:#e9ecef;padding:15px;text-align:center;font-size:0.9rem}
+    .card{background:#f8f9fa;padding:15px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Página Principal</a>
+    <a href="sobre.html">Sobre a clínica</a>
+    <a href="horario.html">Horário de Atendimento</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+ <header>
+<img src="clinica de saude.png" alt="Imagem clínica" class="hero-img">
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Bem-vindo à Clínica Saúde & Bem Estar</h1>
+      <p>
+        A Clínica Saúde & Bem estar é especializada em Medicina Geral e oferece atendimento humanizado, com equipe multidisciplinar e foco na prevenção e bem-estar.
+        Atendemos desde consultas de rotina até acompanhamentos especializados. Nossa missão é promover saúde de forma acessível e segura.
+      </p>
+      <p>
+        Serviços oferecidos: consultas médicas, exames básicos, vacinação, acompanhamento pediátrico e apoio psicológico.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Clínica Saúde & Bem estar— Rua Gabriel pereira de souza, 123, Bairro Iratama, Cidade Garanhuns - CEP 55304-000</div>
+    <div>Telefone: (87) 9 9320-0000 • WhatsApp: (87) 9 9987-9999 • E-mail: contato@clinicasaudebemstar.com</div>
+  </footer>
+</body>
+</html>
+
+
